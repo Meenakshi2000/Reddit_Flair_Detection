@@ -1,0 +1,153 @@
+<title>Reddit flair detection</title>
+	 	
+	 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<div class="container">
+<form action="" method="post" role="form">
+    <br>
+	<div class="form-group">
+	    <label for="name">URL :</label>
+		<input type="text" class="form-control" id="name" name="name" placeholder="  Enter Reddit submission URL">
+	</div>
+	<button type="submit" class="btn btn-success">Submit</button>
+</form>
+{% with messages = get_flashed_messages() %}
+	{% if messages %}
+
+		{% for message in messages %}
+			
+			<div class="alert alert-info">
+				<strong> FLAIR |  </strong> {{ message }}
+			</div>
+
+		{% endfor %}
+	{% endif %}
+{% endwith %}
+
+</div>
+
+
+<style type="text/css">
+
+	body {
+		margin-top: 2%;
+	    margin-bottom: 2%;
+	    margin-right: 2%;
+	    margin-left: 2%;
+	}
+	/* Three image containers (use 25% for four, and 50% for two, etc) */
+	.column {
+	  float: left;
+	  width: 50%;
+	  padding: 40px;
+	}
+
+	/* Clear floats after image containers */
+	.row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+	
+	.row {
+	  display: flex;
+	}
+
+	.column {
+	  flex: 50%;
+	  padding: 3%;
+	}
+
+</style>
+
+<br> <hr> <br>
+
+<body>
+
+	<div class="alert alert-info">
+		<center><strong> 
+			DATA ANALYSIS of Reddit/India </strong> 
+			<br> ( from June 1st 2018 to October 1st 2018 )
+		</center>
+	</div>
+
+	<div class="row">
+	  <div class="column">
+	    <img src="/static/images/1.png" alt="Snow" style="width:100%">
+	    <center>
+	    	Depicts that Flair distribution is highly un-balanced with several self-made flairs; and most favourable flair is "Non-Political" while least favourable is "Food".
+	    </center>
+	  </div>
+	  <div class="column">
+	    <img src="/static/images/2.png" alt="Forest" style="width:100%">
+	    <center>
+	    	Depicts that most of the posts have title length between 50 to 75 words.
+	    </center>
+	  </div>
+	</div>
+
+
+
+
+	<div class="row">
+	  <div class="column">
+	    <img src="/static/images/3.png" alt="Snow" style="width:100%">
+	    <center>
+	    	NO-Body:body = 48288:11385 <br>
+	    	means more than 80% of the posts don't have body, only have title.
+	    </center>
+	  </div>
+	  <div class="column">
+	    <img src="/static/images/4.png" alt="Forest" style="width:100%">
+	    <center>
+	    	Out of those having a body, most of them have words ranging from 20 to 200; <br> while even some has more than 2000 words.
+	    </center>
+	  </div>
+	</div>
+
+
+
+	<div class="row">
+	  <div class="column">
+	    <img src="/static/images/5.png" alt="Snow" style="width:100%">
+	    <center>
+	    	Depicts that less than 0.1% posts have been tagged as "OVER AGE"
+	    </center>
+	  </div>
+	  <div class="column">
+	    <img src="/static/images/10.png" alt="Forest" style="width:100%">
+	    <center>
+	    	Shows that Photography flair has most no. of average upvotes per post while Business/Finance has least.
+	    </center>
+	  </div>
+	</div>
+
+
+
+	<div class="row">
+	  <div class="column">
+	    <img src="/static/images/11.png" alt="Snow" style="width:100%">
+	    <center>
+	    	Shows that AskIndia flair has most no. of average comments (as users comment to answer the query) per post while Business/Finance has least.
+	    </center>
+	  </div>
+	  <div class="column">
+	    <img src="/static/images/9.png" alt="Forest" style="width:100%">
+	    <center>
+	    	Shows that most of the times, no_of_comments is proportional to upvotes.
+	    </center>
+	  </div>
+	</div>
+
+	<img src="/static/images/8.png" alt="Forest" style="width:100%">
+	    <center>
+	    	Shows that trend of posting comments is almost same throughout the timestamp.
+	    </center>
+
+
+</body>
+

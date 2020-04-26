@@ -1,6 +1,6 @@
 # Reddit flair detection
 
-Hello, I am Himanshu Garg, a B. tech undergrad @ IIIT-D, majors in CSE.
+Hello, I am Meenakshi Kumar,Undergraduate student currently pursuing btech in Electronics and Communication from Indira Gandhi Delhi technical University for women. 
 
 Here, i am presenting a simple website which can take URL of any submission of Reddit/India and
 suggest us the best suited Flair for the post using NLP. The website has been hosted on heroku for ease of use.
@@ -17,7 +17,7 @@ Website main page looks something like the below image.
 1. In the URL box, Just enter the Submission URL, of which you want the most appropriate flair.
 2. Tap on submit button.
 
-<Strong> Voila!!! </Strong>  You will have the most appropriated FLAIR (tag) displayed in the Blue box.
+  You will have the most appropriated FLAIR (tag) displayed in the Blue box.
 
 <Strong> NOTE : </Strong> If it displays the message "check URL..." --> means the entered URL is <Strong> NOT </Strong> correct.
 
@@ -43,23 +43,12 @@ Just follow the below steps in order to run this web app offline on your compute
 Here you go, the application is running on your terminal. <br>
 Just open the displayed URL (on terminal) on your web browser.
 
-# love BROWNIES !!!!
- I have also done some data analysis on reddit/India submissions posted from June 1st 2018 to October 1st 2018; which can be found at the above mentioned link - https://flairofreddit.herokuapp.com
+
  
  <img width="1440" alt="Screenshot 2019-07-21 at 8 47 24 PM" src="https://user-images.githubusercontent.com/43913398/61593090-ca8d2e80-abf8-11e9-8682-f3c585985b19.png">
  <img width="1440" alt="Screenshot 2019-07-21 at 8 49 23 PM" src="https://user-images.githubusercontent.com/43913398/61593110-0aecac80-abf9-11e9-8bc1-139ccf8c6c60.png">
  
- and more can be seen @ https://flairofreddit.herokuapp.com
 
-# DATABASE
-
-I have scrapped 2 databases - <br>
-1. for DATA ANALYSIS - (4 months - from June 1st 2018 to October 1st 2018) containing a lot of fields like No_of_comments, timestamp, upvotes, etc.
-2. for TRAINING & TESTING - (1 year - from June 1st 2018 to July 17st 2019) containg only Title, Body and flair.
-
-URL of databases - 
-1. <Strong> Mongodb (.json & .bson) </Strong> - <a href="https://github.com/Himanshu-Garg/Reddit-flair-detection/tree/master/other/mongodb%20database"> here </a>
-2. <Strong> .csv file </Strong> - <a href="https://github.com/Himanshu-Garg/Reddit-flair-detection/tree/master/other/extracted_data"> here </a>
 
 
 # Files STRUCTURE
@@ -82,7 +71,7 @@ Brief description of role of each file in the repo.
  
  
  <li> <Strong> website </Strong> <br>
-  Contains the full website that has been hosted on heroku - https://flairofreddit.herokuapp.com
+  Contains the full website that has been hosted on heroku 
     <ol>
       <li><Strong> model - </Strong> finally used model for flair prediction </li>
       <li><Strong> static - </Strong> contains images of data analysis</li>
@@ -141,6 +130,3 @@ I have trained the model on basically 4 algo - <Strong> Linear SVM, Logistic reg
 Since, in unbalanced data, only Accuracy cannot be a factor to decide the best model. <br>
  So, after looking at F1 score and confusion matrix, Linear SVM (Title only - NO undersampling) model has been finalized and used in the website.
 </Strong></i> 
-
-Here are some of the manually tested data on the final model.
-<img width="1029" alt="Screenshot 2019-07-22 at 3 25 08 PM" src="https://user-images.githubusercontent.com/43913398/61625238-d976ee00-ac97-11e9-9f5f-d94137d8e0fc.png">
